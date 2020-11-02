@@ -65,7 +65,7 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_SERVICE_PRINCIPAL }}
     
-      - name: Disable static collection and set migration command on App Service
+      - name: Enable Kudu build on webapp
         uses: Azure/appservice-settings@v1
         with:  
           app-name: ${{ env.WEBAPP_NAME }}
