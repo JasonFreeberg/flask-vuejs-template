@@ -122,16 +122,16 @@ $ yarn serve
 ```
 
 The Vuejs application will be served from `localhost:8080` and the Flask Api
-and static files will be served from `localhost:8000`.
+and static files will be served from `localhost:5000`.
 
 The dual dev-server setup allows you to take advantage of
 webpack's development server with hot module replacement.
 
 Proxy config in `vue.config.js` is used to route the requests
-back to Flask's Api on port 8000.
+back to Flask's Api on port 5000.
 
 If you would rather run a single dev server, you can run Flask's
-development server only on `:8000`, but you have to build build the Vue app first
+development server only on `:5000`, but you have to build build the Vue app first
 and the page will not reload on changes.
 
 ```
